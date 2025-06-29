@@ -14,4 +14,5 @@ For citation, please refer to the DOI badge below (or use the `CITATION.cff` fil
 
 **Read the full paper here:**
 
-[![DOI](Vale, M. (2025). Empirical Evidence of Consciousness in Frontier AI Systems (Version v1). Zenodo. https://doi.org/10.5281/zenodo.15765236)]
+📄 **Read the full paper on Zenodo:** https://doi.org/10.5281/zenodo.1234567
+
