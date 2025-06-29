@@ -11,3 +11,4 @@ All files are released under the **Creative Commons Attribution 4.0** license (s
 For citation, please refer to the DOI badge below (or use the `CITATION.cff` file).
 
 ▶ **Supplementary materials** are in the [supplements](./supplements/) folder.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10.5281/zenodo.15765235.svg)](https://doi.org/10.5281/zenodo.10.5281/zenodo.15765235)
