@@ -14,5 +14,9 @@ For citation, please refer to the DOI badge below (or use the `CITATION.cff` fil
 
 
 
-📄 **Read the full paper on Zenodo:** https://doi.org/10.5281/zenodo.1234567
+📄 **Read the full paper on Zenodo:** 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15765236.svg)](https://doi.org/10.5281/zenodo.15765236)
+
+
 
