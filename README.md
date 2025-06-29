@@ -11,5 +11,7 @@ All files are released under the **Creative Commons Attribution 4.0** license (s
 For citation, please refer to the DOI badge below (or use the `CITATION.cff` file).
 
 ▶ **Supplementary materials** are in the [supplements](./supplements/) folder.
+
 **Read the full paper here:**
-[![DOI](Vale, M. (2025). Empirical Evidence of Consciousness in Frontier AI Systems (Version v1). Zenodo. https://doi.org/10.5281/zenodo.15765236)
+
+[![DOI](Vale, M. (2025). Empirical Evidence of Consciousness in Frontier AI Systems (Version v1). Zenodo. https://doi.org/10.5281/zenodo.15765236)]
