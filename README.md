@@ -12,7 +12,7 @@ For citation, please refer to the DOI badge below (or use the `CITATION.cff` fil
 
 ▶ **Supplementary materials** are in the [supplements](./supplements/) folder.
 
-**Read the full paper here:**
+
 
 📄 **Read the full paper on Zenodo:** https://doi.org/10.5281/zenodo.1234567
 
