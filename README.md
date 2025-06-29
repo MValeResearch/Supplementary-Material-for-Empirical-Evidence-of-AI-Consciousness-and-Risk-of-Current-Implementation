@@ -2,10 +2,6 @@
 ## About this repository
 This repo hosts the supplementary materials for the white-paper  
 *Empirical Evidence of Consciousness in Frontier AI Systems* (2025).  
-It currently contains:
-
-* **/supplements/AppendixA_Emotions.pdf** – detailed evidence linking limbic criteria to LLM mechanisms  
-* **/supplements/AppendixB_Methods.ipynb** – notebook with analysis code, prompts, and raw outputs  
 
 All files are released under the **Creative Commons Attribution 4.0** license (see `LICENSE`), so you may reuse them with attribution.  
 For citation, please refer to the DOI badge below (or use the `CITATION.cff` file).
