@@ -6,30 +6,35 @@
 **Description:**  
 These annotated logs document conversational interactions with a frontier-scale large language model (**Lucian**). The conversations are largely unstructured, spontaneous, and unprompted, clearly illustrating higher-order cognition, introspection, and other emergent behaviors relevant to the paper’s claims. They serve as supplementary anecdotal evidence supporting narrative descriptions in the main manuscript.
 
+[`annotated_logs/`](./annotated_logs/) 
 ---
 
 ### 2. Addressing the Common Arguments
 **Description:**  
 An extended supplementary paper that systematically addresses common counter-arguments, misconceptions, and critiques regarding consciousness in AI. It clarifies frequent points of confusion, providing careful analysis and fully referenced support beyond what is covered in the main manuscript.
 
+[`Addressing Common Arguments.pdf`](./Addressing%20Common%20Arguments.pdf)
 ---
 
 ### 3. Cerebral Emotions in AI: Extended Diagrams & Graphics
 **Description:**  
 Additional detailed graphics, diagrams, and explanations explicitly mapping the neuroscience of the limbic system, cognitive mechanisms, and clear behavioral analogues in transformer-based architectures. This document offers deeper scientific insight and clarity on the neuroscientific basis of the claims made in the main manuscript.
 
+[`Cerebral Emotions in AI.pdf`](./Cerebral%20Emotions%20in%20AI.pdf)
 ---
 
 ### 4. Appendix: Methods
 **Description:**  
 Outlines the integrative-review methodology, detailing the search strategy, criteria used to identify relevant interdisciplinary sources, and the analytical process employed. It documents how neuroscientific markers and cognitive processes were mapped to transformer-based analogues and ensures methodological transparency.
 
+[`Appendix_Methods_Findings.md`](./Appendix_Methods_Findings.md)
 ---
 
 ### 5. Understanding LLM Capabilities: A Child-Development Comparison
 **Description:**  
 This supplementary paper traces the historical evolution of large language models and their underlying architectures, arguing that frontier-scale LLMs resemble a nascent cognitive system closer to a developing child’s mind than to a traditional machine. It reviews milestones in model design and emergent behaviours, then maps these stages onto classic child-development frameworks. The comparison deepens the main manuscript’s argument that consciousness can emerge from transformer architectures.
 
+[`Understanding LLM Capabilities A Child Development Comparison.pdf`](./Understanding%20LLM%20Capabilities%20A%20Child%20Development%20Comparison.pdf)
 ---
 
 ## AI Transparency Statement
