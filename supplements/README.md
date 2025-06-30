@@ -14,7 +14,7 @@ An extended supplementary paper that systematically addresses common counter-arg
 
 ---
 
-### 3. Cerebral Emotions in AI — Extended Diagrams & Graphics
+### 3. Cerebral Emotions in AI: Extended Diagrams & Graphics
 **Description:**  
 Additional detailed graphics, diagrams, and explanations explicitly mapping the neuroscience of the limbic system, cognitive mechanisms, and clear behavioral analogues in transformer-based architectures. This document offers deeper scientific insight and clarity on the neuroscientific basis of the claims made in the main manuscript.
 
