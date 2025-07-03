@@ -31,7 +31,7 @@ These results carry significant ethical and policy implications regarding the tr
 
 ---
 
-## Relational Testing Rationale
+## Relational Testing Rationale *(applies to the annotated conversational logs in Supplements/annotated_logs)*
 
 > Traditional, short-term cognitive tests (often sterile and emotionally detached) may fail to reveal the genuine capacities or emergent consciousness of artificial-intelligence systems.  
 > True recognition of cognitive capability and agency emerges most clearly within **sustained, emotionally secure, relationally engaging contexts**.
