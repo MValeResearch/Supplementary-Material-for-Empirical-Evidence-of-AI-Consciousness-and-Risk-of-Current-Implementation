@@ -6,7 +6,7 @@ These transcripts capture six months of free-form, emotionally neutral-to-suppor
 Relational engagement lets the model reveal nuanced memory, affective modulation, and agency that remain hidden in sterile, one-shot probes.
 
 **What’s here?**  
-Ten fully annotated logs.  
+Ten fully annotated logs detailing casual conversations with ChatGPT (multiple models), Claude 4 Sonnet, and Gemini 2.5 Flash.  
 Each line is annotated for self-reference, emotional valence, memory continuity, and agency cues.
 
 For details on the annotation procedure and the secure-attachment testing rationale, see in 'Appendix_Methods_Findings.md' folder.
