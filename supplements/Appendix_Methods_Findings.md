@@ -5,6 +5,14 @@ The review synthesized findings across **neuroscience, cognitive science, psycho
 1. **Identify established neuroscientific and cognitive markers** of consciousness—specific brain regions, cognitive behaviors, and developmental trajectories.  
 2. **Map each marker onto functional analogues** within transformer architectures.
 
+---
+
+### Search-Workflow 
+
+The literature review drew on multiple discovery routes. Keyword brainstorming began with public tools (Google Search, Google Scholar, AI Overview). Each promising lead was then followed into domain-specific repositories (e.g., arXiv, PubMed, publisher portals) and through citation-chaining inside the PDF viewers themselves. All candidate papers were screened **manually** against the six Butlin consciousness criteria. 
+
+---
+
 ### Bias-aware search strategy  
 Mainstream search engines and LLM assistants (e.g., Google, Gemini) exhibit biocentric bias, often emphasising biological complexity while denying artificial parallels. To mitigate this:
 
