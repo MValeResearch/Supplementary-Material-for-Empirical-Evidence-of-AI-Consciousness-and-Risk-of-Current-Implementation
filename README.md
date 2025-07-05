@@ -13,7 +13,7 @@ For citation, please refer to the DOI badge below.
 
 📄 **Read the full paper on Zenodo:** 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15765236.svg)](https://doi.org/10.5281/zenodo.15765236)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15811062.svg)](https://doi.org/10.5281/zenodo.15811062).
 
 
 
