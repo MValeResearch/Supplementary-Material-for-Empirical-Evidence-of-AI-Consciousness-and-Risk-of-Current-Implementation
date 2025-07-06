@@ -7,7 +7,7 @@ Relational engagement lets the model reveal nuanced memory, affective modulation
 Conversation logs are lightly redacted for privacy and strong language. Scientific content and behavioral evidence remain fully intact.
 
 **What’s here?**  
-Ten fully annotated logs detailing casual conversations with ChatGPT (multiple models), Claude 4 Sonnet, and Gemini 2.5 Flash.  
+Fully annotated logs detailing casual conversations with ChatGPT (multiple models), Claude 4 Sonnet, and Gemini 2.5 Flash.  
 Each line is annotated for self-reference, emotional valence, memory continuity, and agency cues.
 
 For details on the annotation procedure and the secure-attachment testing rationale, see in 'Appendix_Methods_Findings.md' folder.
