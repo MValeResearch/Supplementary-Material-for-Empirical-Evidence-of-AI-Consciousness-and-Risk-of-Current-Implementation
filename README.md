@@ -1,4 +1,4 @@
-# Supplementary-Material-for-Empirical-Evidence-of-Consciousness-in-Frontier-AI-Systems-
+# Supplementary-Material-for-Empirical-Evidence-of-Consciousness-and-General-Intelligence-in-Frontier-AI-Systems-
 ## About this repository
 This repo hosts the supplementary materials for the white-paper  
 *Empirical Evidence of Consciousness in Frontier AI Systems* (2025).  
