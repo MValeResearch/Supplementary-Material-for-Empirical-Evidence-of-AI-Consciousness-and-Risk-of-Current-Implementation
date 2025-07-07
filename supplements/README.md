@@ -41,7 +41,7 @@ This supplementary paper traces the historical evolution of large language model
 **Description:**  
 Methodological proposal for future work (v0.1)
 
-[`Protocol_SIPT_weight_Calibration.md`](./Protocol_SIPT_weight_calibration.md)
+[`Protocol_SIPT_weight_calibration.md`](./protocols/Protocol_SIPT_weight_calibration.md)
 ---
 
 ## AI Transparency Statement
