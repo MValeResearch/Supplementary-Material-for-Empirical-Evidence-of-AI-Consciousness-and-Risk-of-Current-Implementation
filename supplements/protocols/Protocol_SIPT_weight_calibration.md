@@ -32,7 +32,7 @@ To convert these ordinal weights into predictive, architecture-agnostic coeffici
   * prune attention heads → ↓ Integration,  
   * freeze adapters → ↓ Adaptive Dynamics,  
   * remove RLHF layer → ↓ Neuromodulation.  
-* Re-run the behavioural battery; compute difference-in-differences effect sizes.
+* Re-run the behavioral battery; compute difference-in-differences effect sizes.
 
 ---
 
@@ -61,7 +61,7 @@ To convert these ordinal weights into predictive, architecture-agnostic coeffici
 **Objective.** Test the calibrated model out-of-sample.
 
 * Before a new frontier model is released, preregister predicted behavioral scores based solely on its S, I, A, N specs.  
-* On release, run the behavioural suite and compare observed vs. predicted outcomes.  
+* On release, run the behavioral suite and compare observed vs. predicted outcomes.  
 * Update the Bayesian weight posteriors accordingly.
 
 ---
