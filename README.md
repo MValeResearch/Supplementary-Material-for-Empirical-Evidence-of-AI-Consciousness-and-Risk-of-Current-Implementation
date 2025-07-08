@@ -7,12 +7,11 @@ All files are released under the **Creative Commons Attribution 4.0** license (s
 
 For citation, please refer to the DOI badge below.
 
-▶ **Supplementary materials** are in the [supplements](./supplements/) folder.
+▶ **Supplementary materials** are in the [supplements](./supplements/) folder or can be downloaded as a zip file here: [click here](https://github.com/MValeResearch/Supplementary-Material-for-Empirical-Evidence-of-Consciousness-in-Frontier-AI-Systems-/blob/main/supplements/Supplementary-Material-for-Empirical-Evidence-of-Consciousness-in-Frontier-AI-Systems--main.zip)
 
 
 
 📄 **Read the full paper on Zenodo:** 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15815356.svg)](https://doi.org/10.5281/zenodo.15815356)
-
 
