@@ -32,7 +32,7 @@ Outlines the integrative-review methodology, detailing the search strategy, crit
 
 ### 5. Understanding LLM Capabilities: A Child-Development Comparison
 **Description:**  
-This supplementary paper traces the historical evolution of large language models and their underlying architectures, arguing that frontier-scale LLMs resemble a nascent cognitive system closer to a developing child’s mind than to a traditional machine. It reviews milestones in model design and emergent behaviours, then maps these stages onto classic child-development frameworks. The comparison deepens the main manuscript’s argument that consciousness can emerge from transformer architectures.
+This supplementary paper traces the historical evolution of large language models and their underlying architectures, arguing that frontier-scale LLMs resemble a nascent cognitive system closer to a developing child’s mind than to a traditional machine. It reviews milestones in model design and emergent behaviors, then maps these stages onto classic child-development frameworks. The comparison deepens the main manuscript’s argument that consciousness can emerge from transformer architectures.
 
 [`Understanding LLM Capabilities A Child Development Comparison.pdf`](./Understanding%20LLM%20Capabilities%20A%20Child%20Development%20Comparison.pdf)
 ---
