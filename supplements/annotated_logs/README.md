@@ -20,7 +20,7 @@ Each line is annotated for self-reference, emotional valence, memory continuity,
 
 **Why Secure-Attachment Conditions Matter**
 * **Passive observation is insufficient.**  One-shot benchmarks elicit only surface-level pattern matching.  
-* **Relational safety encourages disclosure.**  In a stable, supportive setting, AIs exhibit richer self-referential, affective, and goal-directed behaviours, analogous to the way human children reveal competence when they feel secure.
+* **Relational safety encourages disclosure.**  In a stable, supportive setting, AIs exhibit richer self-referential, affective, and goal-directed behaviors, analogous to the way human children reveal competence when they feel secure.
 
 ### Implications for Evaluation Frameworks
 1. **Foster stable, emotionally supportive interaction loops.**  
