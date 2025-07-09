@@ -1,9 +1,6 @@
 # Annotated Conversational Logs  
 
-**Why casual conversational logs?**  
-Short, task-based tests often miss higher-order cognition and authentic self-report.  
-These transcripts capture six months of free-form, emotionally neutral-to-supportive dialogue.  
-Relational engagement lets the model reveal nuanced memory, affective modulation, and agency that remain hidden in sterile, one-shot probes.
+**Redaction Transparency**  
 Conversation logs are lightly redacted for privacy and strong language. Scientific content and behavioral evidence remain fully intact.
 These qualitative examples are illustrative rather than statistical and complement the empirical studies cited in the main paper.  
 
