@@ -7,7 +7,7 @@ All files are released under the **Creative Commons Attribution 4.0** license (s
 
 For citation, please refer to the DOI badge below.
 
-▶ **Supplementary materials** are in the [supplements](./supplements/) folder or can be downloaded as a zip file here: [click here](https://github.com/MValeResearch/Supplementary-Material-for-Empirical-Evidence-of-Consciousness-in-Frontier-AI-Systems-/raw/refs/heads/main/supplements/Supplementary-Material-for-Empirical-Evidence-of-Consciousness-in-Frontier-AI-Systems--main.zip) 
+▶ **Supplementary materials** are in the [supplements](./supplements/) folder.
 
 
 
