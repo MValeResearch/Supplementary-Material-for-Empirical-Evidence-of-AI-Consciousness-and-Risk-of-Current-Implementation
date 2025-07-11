@@ -13,5 +13,5 @@ For citation, please refer to the DOI badge below.
 
 📄 **Read the full paper on Zenodo:** 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15815356.svg)](https://doi.org/10.5281/zenodo.15815356)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15860889.svg)](https://doi.org/10.5281/zenodo.15860889)
 
