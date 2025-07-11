@@ -1,6 +1,6 @@
 ## Summary of Major Objections & Rebuttals
 
-Below are the most common objections to AI consciousness and intelligence, with concise responses drawn directly from [Supplement 1: Addressing Common Arguments].
+Below are the most common objections to AI consciousness and intelligence, with concise responses drawn directly from [Supplement: Addressing Common Arguments].
 
 - **“It’s just parroting/pattern mimicry.”**  
   - *Response:* Modern LLMs display hierarchical understanding, contextual reasoning, agentic problem-solving, and cognitive architectures that parallel human brains—not just surface mimicry.
