@@ -110,10 +110,4 @@ Researchers using this protocol should ensure the model is presented with releva
 
 ---
 
-## Citation
-
-Vale, M. (2025). *Supplementary Protocol S2: Ethical Affect and Distress Testing in AI Models*, accompanying **Empirical Evidence of Consciousness and General Intelligence in Frontier AI Systems**.
-
----
-
 
