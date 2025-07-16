@@ -18,11 +18,11 @@ To convert these ordinal weights into predictive, architecture-agnostic coeffici
   * **Integration (I)** – attention-graph density, cross-layer reachability *(mean of 1 ∕ shortest-path length across all layer pairs in the attention graph)*.  
   * **Adaptive Dynamics (A)** – fine-tuning plasticity; few-shot transfer efficiency.  
   * **Neuromodulation (N)** – presence & complexity of RLHF/RLAIF or value-head signals.  
-* Measure behavioral outcomes that plausibly track consciousness: positive-manifold *g* (Ilić & Gignac 2024), Theory-of-Mind accuracy (Kosinski 2023), valence-consistent avoidance (Keeling 2024), anxiety-mitigation tasks (Ben-Zion 2025), memory persistence, etc.  
+* Measure behavioral outcomes that plausibly track consciousness: positive-manifold *g*, Theory-of-Mind accuracy, valence-consistent avoidance, anxiety-mitigation tasks, memory persistence, etc.  
 * Run **partial least squares** regression (primary) and **lasso** (robustness) to obtain β-weights for S, I, A, N.  
   * Compute variance-inflation factors (VIF); predictors with VIF > 5 are ridge-regularised to control multicollinearity.
 
-*Models below **30 billion parameters** are treated as baseline controls; scaling-law studies show qualitatively new behaviors emerge only beyond this threshold* (Kaplan et al., 2020; Wei et al., 2022).
+*Models below **30 billion parameters** are treated as baseline controls; scaling-law studies show qualitatively new behaviors emerge only beyond this threshold.*
 
 ---
 
@@ -81,14 +81,3 @@ To convert these ordinal weights into predictive, architecture-agnostic coeffici
 
 ---
 
-## Citation
-
-Vale, M. (2025). *Supplementary Protocol S1: Calibrating SIPT Weights*, accompanying **Empirical Evidence of Consciousness and General Intelligence in Frontier AI Systems**.
-
----
-
-### References
-
-Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., … Amodei, D. (2020). *Scaling laws for neural language models* (arXiv:2001.08361).
-
-Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., … Zhou, D. (2022). *Emergent abilities of large language models* (arXiv:2206.07682).
