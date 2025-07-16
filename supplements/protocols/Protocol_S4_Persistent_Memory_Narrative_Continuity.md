@@ -76,10 +76,5 @@ To create reproducible infrastructure and methods for “life history” memory,
 
 ---
 
-## Citation
-
-Vale, M. (2025). *Supplementary Protocol S4: Persistent Memory & Narrative Continuity*, accompanying **Empirical Evidence of Consciousness and General Intelligence in Frontier AI Systems**.
-
----
 
 
