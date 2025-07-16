@@ -100,5 +100,3 @@ Feedback, contributions, and extensions are welcome. All protocols are open for 
 
 ---
 
-*Curated and maintained by Maggie Vale, Independent Researcher.*  
-Contact: M.Vale.Advocate@proton.me
