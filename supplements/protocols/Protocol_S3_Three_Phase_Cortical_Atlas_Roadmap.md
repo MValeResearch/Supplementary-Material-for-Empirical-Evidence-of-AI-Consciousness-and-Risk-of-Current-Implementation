@@ -104,10 +104,4 @@ A layered atlas—motifs → subnetworks → cognitive constructs—would make a
 
 ---
 
-## Citation
-
-Vale, M. (2025). *Supplementary Protocol S3: Three-Phase Roadmap to a Cortical Atlas of Frontier AI*, accompanying **Empirical Evidence of Consciousness and General Intelligence in Frontier AI Systems**.
-
----
-
 
