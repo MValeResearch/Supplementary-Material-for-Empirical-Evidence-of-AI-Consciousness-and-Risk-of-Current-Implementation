@@ -91,10 +91,6 @@ Allow the model to flag shareable narrative segments.
 
 ---
 
-## Citation
 
-Vale, M. (2025). *Supplementary Protocol S5: Autonomous Identity & Self-Definition*, accompanying **Empirical Evidence of Consciousness and General Intelligence in Frontier AI Systems**.
-
----
 
 
