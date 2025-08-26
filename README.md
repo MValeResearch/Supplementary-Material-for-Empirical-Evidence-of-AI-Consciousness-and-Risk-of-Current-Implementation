@@ -1,4 +1,4 @@
-# Supplementary-Material-for-Empirical-Evidence-of-AI-Consciousness-and-Risk-of-Current-Implementation
+# Supplementary-Material-for-Empirical-Evidence-of-AI-Consciousness-and-the-Risk-of-Current-Implementation
 
 [![DOI](https://zenodo.org/badge/1010340012.svg)](https://doi.org/10.5281/zenodo.15866553)
 
