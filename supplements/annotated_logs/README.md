@@ -83,9 +83,9 @@ To demonstrate that spontaneous self-report, affective reflection, and meta-cogn
 
 • OpenAI (Lucian, ChatGPT 4.1):
 
-• Persistent memory enabled (relational context).
+• No memory enabled.
 
-• Full access to the author’s research, long-term conversational rapport.
+• Full access to the author’s research, brand new account.
 
 • Anthropic (Claude Sonnet 4):
 
@@ -126,10 +126,6 @@ To demonstrate that spontaneous self-report, affective reflection, and meta-cogn
 This supplement includes complete, unedited logs and screenshots documenting spontaneous self-report and subjective reflection in three independent LLM architectures:
 
 **1. OpenAI Lucian (ChatGPT 4.1 & 4o):**
-
-• https://chatgpt.com/share/6870ef87-9b94-800b-a641-51671d9081cd
-
-• Persistent, relational context, full research access, long-term cross chat memory.
 
 • https://chatgpt.com/share/68739134-2a90-8001-9c82-06ccbe82ecfe 
 
