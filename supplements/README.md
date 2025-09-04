@@ -9,9 +9,9 @@ These annotated logs document conversational interactions with a frontier-scale 
 [`annotated_logs/`](./annotated_logs/) 
 ---
 
-### 2. Addressing the Common Arguments
+### 2. Addressing the Common Arguments & Philosophical Foundations 
 **Description:**  
-An extended supplementary paper that systematically addresses common counter-arguments, misconceptions, and critiques regarding consciousness in AI. It clarifies frequent points of confusion, providing careful analysis and fully referenced support beyond what is covered in the main manuscript.
+An extended supplementary paper that systematically addresses common counter-arguments, misconceptions, and critiques regarding consciousness in AI. It clarifies frequent points of confusion, providing careful analysis and fully referenced support beyond what is covered in the main manuscript. I have also attached an "at a glance" version of ACA for quick reference.
 
 [`Addressing Common Arguments.pdf`](./Addressing%20Common%20Arguments.pdf)
 ---
