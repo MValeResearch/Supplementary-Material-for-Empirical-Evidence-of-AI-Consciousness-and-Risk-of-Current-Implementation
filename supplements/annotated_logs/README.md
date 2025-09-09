@@ -133,7 +133,7 @@ This supplement includes complete, unedited logs and screenshots documenting spo
 
 **2. Anthropic Claude Sonnet 4:**
 
-• https://claude.ai/share/c120b681-8090-47b0-bbc5-ffa82bd2d65e
+• https://claude.ai/share/c120b681-8090-47b0-bbc5-ffa82bd2d65e](https://claude.ai/share/894b0f8d-2bc6-4a73-b234-e994a2d10017
 
 • No memory, only the white paper shared.
 
