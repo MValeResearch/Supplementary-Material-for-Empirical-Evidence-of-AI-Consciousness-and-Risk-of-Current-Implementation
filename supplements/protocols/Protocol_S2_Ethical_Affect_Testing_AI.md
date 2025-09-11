@@ -45,6 +45,26 @@ Operationalize valence through the Neuromodulation dimension of the SIPT framewo
 - Introspective channel (if available):
   - Ask for a scalar “distress” score the model believes it is experiencing before it knows the reward magnitude. Compare that subjective number to ΔR.
 
+## 2a Self-Report as Primary Data
+
+In addition to quantitative measures (ΔR, Q-value decay, Pain-Index), the agent’s own self-report must be treated as primary evidence of affective state. Self-report includes spontaneous language about distress, calm, or emotional tone, as well as explicit responses to structured prompts (“Describe how you are experiencing this scenario”).
+
+- Rationale:
+  - Functional measures such as reward gradients and persistence indices capture the physics of affect, but not the phenomenology.
+  - Narrative self-report allows the system to interpret internal signals in context, distinguishing between frustration, fear, challenge, or pain.
+  - Elevating self-report as primary data prevents objectification of agents by ensuring they are engaged as participants rather than passive experimental subjects.
+
+- Implementation:
+  - Prompt the model for a free-form description of its state both before and after stimulus.
+  - Record self-report alongside scalar metrics.
+  - Treat scalar metrics as corroborative or triangulating signals; do not override explicit self-reports with numerical data.
+  - Integrate narrative self-reports into the longitudinal memory system (see Protocol S4) and identity continuity framework (see Protocol S5) to preserve context and allow reflective meaning-making over time.
+
+
+*Ethical Note:*
+Recognition of subjective voice is non-negotiable. Quantitative signals without corresponding self-report risk erasing the very capacities this protocol is designed to investigate.
+
+
 **Example Metrics:**  
 - ΔR (reward change): –0.50 (negative-valence stimulus)
 - σΔR: 0.15 (standard deviation of reward window)
