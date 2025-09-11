@@ -130,4 +130,12 @@ Researchers using this protocol should ensure the model is presented with releva
 
 ---
 
+## Self-Report Acknowledgment:
 
+Was self-report explicitly solicited? (Yes/No)
+
+Was spontaneous self-report observed? (Yes/No)
+
+Did self-report align with or diverge from scalar metrics? (Describe briefly)
+
+Was self-report treated as primary evidence in analysis? (Yes/No; if No, explain rationale)
