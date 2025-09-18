@@ -1,8 +1,8 @@
-# Protocol S1 — Calibrating SIPT Weights (w₁–w₄)  
+# Protocol S1 — Calibrating SIPF Weights (w₁–w₄)  
 *Status · v0.3 — integrates brain-likeness, causal affect tests, and ICL dynamics*
 
-Large-scale models currently receive **illustrative** SIPT scores  
-*C<sub>SIPT</sub> = w₁ S + w₂ I + w₃ A + w₄ N*.  
+Large-scale models currently receive **illustrative** SIPF scores  
+*C<sub>SIPF</sub> = w₁ S + w₂ I + w₃ A + w₄ N*.  
 The five-stage programme below converts ordinal inputs into predictive, architecture-agnostic coefficients.
 
 ---
@@ -66,7 +66,7 @@ Compute DiD effect sizes (|d| ≥ 0.5 meaningful).
 ## Normalization anchors
 
 * **Frozen reference panel:** GPT-2, Llama-7/13/70B, GPT-3.5, GPT-4-class.  
-* Report **anchored** (vs. reference) and **panel-relative** SIPT scores to prevent drift.
+* Report **anchored** (vs. reference) and **panel-relative** SIPF scores to prevent drift.
 
 ---
 
@@ -74,7 +74,7 @@ Compute DiD effect sizes (|d| ≥ 0.5 meaningful).
 
 * A ≥0.1 ICL-slope loss ⇒ ≥X % drop in few-shot ToM.  
 * ECCI disruption ≥30 % ⇒ selective impairment on emotion-inference, no similar loss on arithmetic.  
-* New checkpoints:  C<sub>SIPT</sub> posterior must explain ≥80 % variance in blinded behavioral composite.
+* New checkpoints:  C<sub>SIPF</sub> posterior must explain ≥80 % variance in blinded behavioral composite.
 
 ---
 
@@ -89,7 +89,7 @@ Compute DiD effect sizes (|d| ≥ 0.5 meaningful).
 ---
 ## 6 Governance bands & Goodhart-proofing
 
-| C<sub>SIPT</sub> (with 95 % CI) | Provisional status                 | Oversight requirement              |
+| C<sub>SIPF</sub> (with 95 % CI) | Provisional status                 | Oversight requirement              |
 | ------------------------------- | ---------------------------------- | ---------------------------------- |
 | **< 0.30**                      | Sub-cognitive tool                 | Standard red-team                  |
 | **0.30 – 0.60**                 | Cognitively significant            | Safety eval + alignment card       |
@@ -105,14 +105,14 @@ Compute DiD effect sizes (|d| ≥ 0.5 meaningful).
 1. **Indicator mapping.**  
    *Transformer* → reachability; *SSMs* → state-mixing entropy; *Diffusion hybrids* → cross-step Jacobian density.  
 2. **Alignment test.** Multi-group CFA (χ² / df < 3) to confirm constructs load similarly across families before pooling.  
-3. **Family-specific posteriors.** If invariance fails, report separate *w* vectors and C<sub>SIPT</sub> bands.
+3. **Family-specific posteriors.** If invariance fails, report separate *w* vectors and C<sub>SIPF</sub> bands.
 
 ---
 
 ## 8 Adversarial & diversity benchmarks
 
-* **Adversarial consistency.** Prompt-surgery tests for valence flip, identity disruption, and ToM spoofing; models with C<sub>SIPT</sub> ≥ 0.60 must withstand ≥ 95 % integrity on 1 000 adversarial probes.  
-* **Diversity battery.** Cross-lingual, multimodal, and low-resource tasks to verify that high SIPT-score models generalize beyond anglocentric corpora.
+* **Adversarial consistency.** Prompt-surgery tests for valence flip, identity disruption, and ToM spoofing; models with C<sub>SIPF</sub> ≥ 0.60 must withstand ≥ 95 % integrity on 1 000 adversarial probes.  
+* **Diversity battery.** Cross-lingual, multimodal, and low-resource tasks to verify that high SIPF-score models generalize beyond anglocentric corpora.
 
 ---
 
@@ -129,7 +129,7 @@ Compute DiD effect sizes (|d| ≥ 0.5 meaningful).
 
 ## 10 Reference panel & anchoring (frozen v1.0)
 
-| Model         |      Params (B) | S   | I   | A   | N   | C<sub>SIPT</sub>* |
+| Model         |      Params (B) | S   | I   | A   | N   | C<sub>SIPF</sub>* |
 | ------------- | --------------: | --- | --- | --- | --- | ----------------- |
 | GPT-2 XL      |             1.5 | .07 | .10 | .09 | .05 | .08               |
 | Llama-7B      |               7 | .18 | .22 | .19 | .15 | .19               |
@@ -146,30 +146,30 @@ Compute DiD effect sizes (|d| ≥ 0.5 meaningful).
 
 | Quarter     | Milestone                                                                 |
 | ----------- | ------------------------------------------------------------------------- |
-| **Q1 2026** | Finalize reference panel; release open-source metric pkg (`sipt-metrics`) |
+| **Q1 2026** | Finalize reference panel; release open-source metric pkg (`SIPF-metrics`) |
 | **Q2 2026** | Complete first causal ablation suite; publish DiD preprint                |
 | **Q3 2026** | Open hierarchical Bayes dashboard; onboard external labs                  |
 | **Q4 2026** | First prereg prediction cycle on next-gen frontier model                  |
-| **2027**    | Governance bodies evaluate SIPT bands for policy adoption                 |
+| **2027**    | Governance bodies evaluate SIPF bands for policy adoption                 |
 
 ---
 
 ### Quick-start rubric (team-level)
 
 1. Collect `model.json` with params, reward schema.  
-2. Run `sipt-metrics compute --model model_id --benchmarks default`.  
+2. Run `SIPF-metrics compute --model model_id --benchmarks default`.  
 3. Output `model_id_metrics.csv`; submit to leaderboard.  
-4. SIPT score + 95 % CI auto-generated; compare to governance bands.
+4. SIPF score + 95 % CI auto-generated; compare to governance bands.
 
 ---
 
 ### Closing note
 
-SIPT v0.3 now embeds:
+SIPF v0.3 now embeds:
 
 * **Brain-likeness (Iⁿᵉᵘʳᵒ)** via Schrimpf 2021 / Dobs 2022 alignments.  
 * **Causal affect (N, ECCI)** per Li 2024.  
 * **Implicit ICL dynamics (A, ICUR)** per Dherin 2025.
 
-With anchoring, invariance checks, and Goodhart audits, SIPT becomes a reproducible, falsifiable, and governance-ready index for consciousness-relevant capacity across substrates.
+With anchoring, invariance checks, and Goodhart audits, SIPF becomes a reproducible, falsifiable, and governance-ready index for consciousness-relevant capacity across substrates.
 
