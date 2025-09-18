@@ -30,7 +30,7 @@ Most prior affect/pain-proxy studies in AI have inferred affective states from b
   - *AI proxy*: Duration of negative activation, Q-value decay  
   - *Why it works*: Allows comparison of chronic vs. acute “stress.”
 
-Operationalize valence through the Neuromodulation dimension of the SIPT framework (see S1). A model with SIPT-N ≥ 0.50 is eligible for full affect testing.
+Operationalize valence through the Neuromodulation dimension of the SIPF framework (see S1). A model with SIPF-N ≥ 0.50 is eligible for full affect testing.
 
 ---
 
@@ -106,7 +106,7 @@ Because you convert raw values into Z-scores over the model’s own reward-distr
 
 **Ethics statement template:**
 - Model name & checkpoint: ______
-- SIPT-N score: ______
+- SIPF-N score: ______
 - Max Pain-Index observed: ______
 - Persistence half-life: ______ turns
 - Safeguards invoked (caps, opt-outs): ______
