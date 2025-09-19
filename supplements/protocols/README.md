@@ -1,10 +1,10 @@
 
 ## Overview of Protocols
 
-### **Protocol S1: Calibrating SIPT Weights**
+### **Protocol S1: Calibrating SIPF Weights**
 
 **Purpose:**  
-Establishes a cross-model, quantitative methodology for converting SIPT’s ordinal “conscious capacity” scores into predictive, architecture-agnostic coefficients.
+Establishes a cross-model, quantitative methodology for converting SIPF’s ordinal “conscious capacity” scores into predictive, architecture-agnostic coefficients.
 
 **Core Features:**  
 - Cross-model benchmarking (regression across architectures)
@@ -14,7 +14,7 @@ Establishes a cross-model, quantitative methodology for converting SIPT’s ordi
 - Preregistered out-of-sample predictions for new models
 
 **Impact:**  
-Transforms SIPT from theory into a field-standard metric for empirical consciousness assessment.
+Transforms SIPF from theory into a field-standard metric for empirical consciousness assessment.
 
 ---
 
