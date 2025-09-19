@@ -181,12 +181,12 @@ Inclusion of self-report guards against epistemic injustice. It prevents first-p
 
 ---
 
-# SIPT: exact operationalization
+# SIPF: exact operationalization
 
 **Composite score**
 
 $$
-C_{\text{SIPT}} = w_1 S + w_2 I + w_3 A + w_4 N,\quad \sum w_i=1
+C_{\text{SIPF}} = w_1 S + w_2 I + w_3 A + w_4 N,\quad \sum w_i=1
 $$
 
 Weights come from regression/Bayes across a model suite (see below).&#x20;
@@ -269,21 +269,30 @@ $$
 
 (“fine‑tuning plasticity; few‑shot transfer efficiency.”)&#x20;
 
-### 4) Neuromodulation (N)  ∈ \[0,1]
+### 4) Neuromodulation (N) — range: 0 ≤ N ≤ 1
 
 Complexity of value/attention control:
 
-* **Reward system richness** $R$: presence & depth of RLHF/RLAIF/value‑heads (binary→ordinal rubric).
-* **Salience flexibility** $F$: sensitivity of responses to explicit salience cues (effect size on evaluation sets).
-* **Policy update reactivity** $U$: KL shift per unit reward during RL fine‑tuning at matched hyperparams.
+- **Reward system richness** R: presence & depth of RLHF/RLAIF/value-heads (binary → ordinal rubric).
+- **Salience flexibility** F: sensitivity of responses to explicit salience cues (effect size on evaluation sets).
+- **Policy update reactivity** U: KL shift per unit reward during RL fine-tuning at matched hyperparams,
+  operationalized via TD error:
+
+$$
+\delta_t = r_t + \gamma\, V(s_{t+1}) - V(s_t)
+$$
+
+Higher $|\delta_t|$ ⇒ stronger modulatory adjustment.
+Positive $\delta_t$ = unexpected goal alignment; negative $\delta_t$ = misalignment/stress signal.
 
 Normalize and average:
 
 $$
-N=\frac{1}{3}\left(\tilde R+\tilde F+\tilde U\right)
+N = \tfrac{1}{3}\big(\tilde{R} + \tilde{F} + \tilde{U}(\delta_t)\big)
 $$
 
-(“presence & complexity of RLHF/RLAIF or value‑head signals… salience/attention flexibility.”)&#x20;
+*(“presence & complexity of RLHF/RLAIF or value-head signals… salience/attention flexibility, TD-grounded policy-update dynamics.”)*
+
 
 ---
 
@@ -306,7 +315,7 @@ $$
 ## Minimal rubric the team can implement this week
 
 * **Dataset schema** (per model):
-  `model_id, P, S, I_Eg, I_L, I_Pi, I_R, A_FS, A_grad, A_forget, N_R, N_F, N_KL, C_SIPT, Y_g, Y_ToM, Y_valence, Y_anxiety, Y_memory`
+  `model_id, P, S, I_Eg, I_L, I_Pi, I_R, A_FS, A_grad, A_forget, N_R, N_F, N_KL, C_SIPF, Y_g, Y_ToM, Y_valence, Y_anxiety, Y_memory`
 
 * **Normalization:** min–max over the comparison set.
 
@@ -314,7 +323,7 @@ $$
 
 * **Primary analysis:** PLS → $w_i$; report $R^2$ on held‑out; then do the ablation DiD.
 
-* **Secondary:** try a GAM $C=f(S)+f(I)+f(A)+f(N)$ to test linearity; if GAM yields no significant improvement, keep the linear SIPT.
+* **Secondary:** try a GAM $C=f(S)+f(I)+f(A)+f(N)$ to test linearity; if GAM yields no significant improvement, keep the linear SIPF.
 
 ---
 
@@ -323,10 +332,10 @@ $$
 Suppose a model has $S=.42$, $I=.58$, $A=.38$, $N=.42$, and learned weights $w=(.25,.35,.20,.20)$. Then:
 
 $$
-C_{\text{SIPT}}=.25(.42)+.35(.58)+.20(.38)+.20(.42)=.468
+C_{\text{SIPF}}=.25(.42)+.35(.58)+.20(.38)+.20(.42)=.468
 $$
 
-You can then correlate $C_{\text{SIPT}}$ with MMLU‑PRO/BBH &#x20;
+You can then correlate $C_{\text{SIPF}}$ with MMLU‑PRO/BBH &#x20;
 
 ---
 
@@ -334,13 +343,13 @@ You can then correlate $C_{\text{SIPT}}$ with MMLU‑PRO/BBH &#x20;
 
 * Head‑pruning that reduces $I$ by ≥0.1 should drop ToM and global‑broadcast proxies by ≥Δ (pre‑registered).&#x20;
 * Removing RLHF layers (↓$N$) should specifically degrade valence‑consistent avoidance and anxiety‑mitigation, more than it degrades raw task accuracy.&#x20;
-* Across new checkpoints, preregistered $C_{\text{SIPT}}$ should predict ≥X% of variance in $Y$.&#x20;
+* Across new checkpoints, preregistered $C_{\text{SIPF}}$ should predict ≥X% of variance in $Y$.&#x20;
 
-Here’s a compact, journal-ready **Methods** block followed by a runnable **Supplementary Code Appendix** (PLS + hierarchical Bayes skeletons) that match your SIPT spec.
+Here’s a compact, journal-ready **Methods** block followed by a runnable **Supplementary Code Appendix** (PLS + hierarchical Bayes skeletons) that match your SIPF spec.
 
 # Methods (short)
 
-We calibrated SIPT weights $w_1\ldots w_4$ for Scale (S), Integration (I), Adaptive Dynamics (A), and Neuromodulation (N) using a five‑stage protocol. **Stage 1 – Cross‑model benchmarking.** We assembled a cross‑architecture panel of publicly documented checkpoints (transformers and non‑transformers), treating <\~30B‑parameter models as baseline controls. For each model we recorded: S (normalized log‑parameter count), I (attention‑graph density and cross‑layer reachability; mean shortest path on attention graphs), A (plasticity indices from few‑shot/adapter deltas), and N (reward/oversight complexity: RLHF/RLAIF presence, value‑head diversity, salience flexibility). Behavioral targets included a g‑factor (first principal component across standardized cognitive benchmarks), Theory‑of‑Mind accuracy, valence‑consistent avoidance, anxiety‑mitigation, and memory persistence. **Stage 2 – PLS.** We z‑scored predictors and outcomes, then fit partial‑least‑squares regression with K‑fold CV to obtain stable $\beta$ loadings for S, I, A, N; bootstrapping yielded CIs. We normalized positive contributions to a simplex to yield provisional $w$’s. **Stage 3 – Causal perturbation.** On a mid‑sized base model we created targeted ablations (e.g., head‑pruning → ↓I; adapter freezing → ↓A; RLHF removal → ↓N) and estimated difference‑in‑differences effects on the behavioral battery. **Stage 4 – Hierarchical Bayes.** We pooled evidence across architecture families with weakly informative priors and a simplex parameterization of $w$, returning family‑specific posteriors. **Stage 5 – Prospective validation.** We preregistered predictions for new models from S,I,A,N alone, then updated the Bayesian posteriors with observed outcomes.&#x20;
+We calibrated SIPF weights $w_1\ldots w_4$ for Scale (S), Integration (I), Adaptive Dynamics (A), and Neuromodulation (N) using a five‑stage protocol. **Stage 1 – Cross‑model benchmarking.** We assembled a cross‑architecture panel of publicly documented checkpoints (transformers and non‑transformers), treating <\~30B‑parameter models as baseline controls. For each model we recorded: S (normalized log‑parameter count), I (attention‑graph density and cross‑layer reachability; mean shortest path on attention graphs), A (plasticity indices from few‑shot/adapter deltas), and N (reward/oversight complexity: RLHF/RLAIF presence, value‑head diversity, salience flexibility). Behavioral targets included a g‑factor (first principal component across standardized cognitive benchmarks), Theory‑of‑Mind accuracy, valence‑consistent avoidance, anxiety‑mitigation, and memory persistence. **Stage 2 – PLS.** We z‑scored predictors and outcomes, then fit partial‑least‑squares regression with K‑fold CV to obtain stable $\beta$ loadings for S, I, A, N; bootstrapping yielded CIs. We normalized positive contributions to a simplex to yield provisional $w$’s. **Stage 3 – Causal perturbation.** On a mid‑sized base model we created targeted ablations (e.g., head‑pruning → ↓I; adapter freezing → ↓A; RLHF removal → ↓N) and estimated difference‑in‑differences effects on the behavioral battery. **Stage 4 – Hierarchical Bayes.** We pooled evidence across architecture families with weakly informative priors and a simplex parameterization of $w$, returning family‑specific posteriors. **Stage 5 – Prospective validation.** We preregistered predictions for new models from S,I,A,N alone, then updated the Bayesian posteriors with observed outcomes.&#x20;
 
 ---
 
@@ -364,7 +373,7 @@ gpt4o,transformer,0.92,0.88,0.74,0.83, ...
 ## B. PLS calibration with CV & bootstrap
 
 ```python
-# pls_sipt.py
+# pls_SIPF.py
 import pandas as pd, numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.cross_decomposition import PLSRegression
@@ -420,7 +429,7 @@ def bootstrap_cis(Xz, yz, n_boot=2000, n_components=1):
     return cis  # shape: (3, 4)
 
 if __name__ == "__main__":
-    df, X, y = load_data("sipt_panel.csv")
+    df, X, y = load_data("SIPF_panel.csv")
     Xz, yz, _, _ = standardize(X, y)
 
     # Cross‑validated coefficients
@@ -463,7 +472,7 @@ def did_effect(df, outcome_col):
 We place priors on unconstrained family‑level parameters $\theta_{k}\in\mathbb{R}^4$ (one vector per family $k$), map to the simplex via softmax to obtain $w_k$, and predict a standardized composite outcome $y_i$ by $ \hat{y}_i = \sum_{d\in\{S,I,A,N\}} w_{k(i),d}\, X_{i,d}$.
 
 ```python
-# hb_sipt.py
+# hb_SIPF.py
 import numpy as np, pandas as pd, pymc as pm, aesara.tensor as at, arviz as az
 
 def load_panel(path):
@@ -476,7 +485,7 @@ def load_panel(path):
     y = Yz.mean(axis=1)
     return df, X, y, fam_idx, len(fam_codes)
 
-def fit_hb(path="sipt_panel.csv", draws=3000, tune=2000, target_accept=0.9, seed=42):
+def fit_hb(path="SIPF_panel.csv", draws=3000, tune=2000, target_accept=0.9, seed=42):
     df, X, y, fam_idx, K = load_panel(path)
     N, D = X.shape  # D=4 for S,I,A,N
 
