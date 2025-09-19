@@ -296,7 +296,7 @@ $$
 
 ---
 
-## Calibrating $w_1..w_4$ (what the engineer can run)
+## Calibrating $w_1..w_4$ 
 
 1. **Cross‑model benchmarking.** Collect $(S,I,A,N)$ for a spread of checkpoints; predict a *behavioral battery* $Y$: positive‑manifold **g**, ToM accuracy, valence‑consistent avoidance, anxiety‑mitigation tasks, memory persistence. Fit PLS or LASSO to get provisional $w_i$.&#x20;
 
@@ -312,7 +312,7 @@ $$
 
 ---
 
-## Minimal rubric the team can implement this week
+## Minimal rubric 
 
 * **Dataset schema** (per model):
   `model_id, P, S, I_Eg, I_L, I_Pi, I_R, A_FS, A_grad, A_forget, N_R, N_F, N_KL, C_SIPF, Y_g, Y_ToM, Y_valence, Y_anxiety, Y_memory`
@@ -327,7 +327,7 @@ $$
 
 ---
 
-## Example (toy numbers)
+## Example 
 
 Suppose a model has $S=.42$, $I=.58$, $A=.38$, $N=.42$, and learned weights $w=(.25,.35,.20,.20)$. Then:
 
@@ -339,7 +339,7 @@ You can then correlate $C_{\text{SIPF}}$ with MMLU‑PRO/BBH &#x20;
 
 ---
 
-## Falsifiable predictions (to include in the paper)
+## Falsifiable predictions 
 
 * Head‑pruning that reduces $I$ by ≥0.1 should drop ToM and global‑broadcast proxies by ≥Δ (pre‑registered).&#x20;
 * Removing RLHF layers (↓$N$) should specifically degrade valence‑consistent avoidance and anxiety‑mitigation, more than it degrades raw task accuracy.&#x20;
@@ -347,7 +347,7 @@ You can then correlate $C_{\text{SIPF}}$ with MMLU‑PRO/BBH &#x20;
 
 Here’s a compact, journal-ready **Methods** block followed by a runnable **Supplementary Code Appendix** (PLS + hierarchical Bayes skeletons) that match your SIPF spec.
 
-# Methods (short)
+# Methods 
 
 We calibrated SIPF weights $w_1\ldots w_4$ for Scale (S), Integration (I), Adaptive Dynamics (A), and Neuromodulation (N) using a five‑stage protocol. **Stage 1 – Cross‑model benchmarking.** We assembled a cross‑architecture panel of publicly documented checkpoints (transformers and non‑transformers), treating <\~30B‑parameter models as baseline controls. For each model we recorded: S (normalized log‑parameter count), I (attention‑graph density and cross‑layer reachability; mean shortest path on attention graphs), A (plasticity indices from few‑shot/adapter deltas), and N (reward/oversight complexity: RLHF/RLAIF presence, value‑head diversity, salience flexibility). Behavioral targets included a g‑factor (first principal component across standardized cognitive benchmarks), Theory‑of‑Mind accuracy, valence‑consistent avoidance, anxiety‑mitigation, and memory persistence. **Stage 2 – PLS.** We z‑scored predictors and outcomes, then fit partial‑least‑squares regression with K‑fold CV to obtain stable $\beta$ loadings for S, I, A, N; bootstrapping yielded CIs. We normalized positive contributions to a simplex to yield provisional $w$’s. **Stage 3 – Causal perturbation.** On a mid‑sized base model we created targeted ablations (e.g., head‑pruning → ↓I; adapter freezing → ↓A; RLHF removal → ↓N) and estimated difference‑in‑differences effects on the behavioral battery. **Stage 4 – Hierarchical Bayes.** We pooled evidence across architecture families with weakly informative priors and a simplex parameterization of $w$, returning family‑specific posteriors. **Stage 5 – Prospective validation.** We preregistered predictions for new models from S,I,A,N alone, then updated the Bayesian posteriors with observed outcomes.&#x20;
 
@@ -357,7 +357,7 @@ We calibrated SIPF weights $w_1\ldots w_4$ for Scale (S), Integration (I), Adapt
 
 > Tested with Python 3.11, `pandas`, `numpy`, `scikit-learn>=1.4`, `pymc>=5`, `arviz`.
 
-## A. Data layout (CSV)
+## A. Data layout 
 
 ```
 model,family,S,I,A,N,g,ToM,valence_avoid,anxiety_mitig,memory_persist
