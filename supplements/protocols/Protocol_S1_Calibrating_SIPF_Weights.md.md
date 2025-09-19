@@ -205,53 +205,56 @@ $$
 
 where $P$ is params (or effective params for MoE = active‑experts×expert‑size). (Matches “normalized parameter count”.)&#x20;
 
-### 2) Integration (I)  ∈ \[0,1]
+---
 
-Integration combines **internal broadcastability** (**I<sup>topo</sup>**) with **brain-likeness** (**I<sup>neuro</sup>**).
+### 2) Integration (I) ∈ [0,1]
+
+Integration combines **internal broadcastability** ($I^{\text{topo}}$) with **brain-likeness** ($I^{\text{neuro}}$).
 
 ---
 
-#### A.  I<sup>topo</sup> — graph-theoretic broadcastability  
+#### A. $I^{\text{topo}}$ — Graph-Theoretic Broadcastability
 
-1. **Build** a multilayer directed graph \(G\)  
+1. **Build** a multilayer directed graph $G$:  
    * Nodes = all attention heads across layers.  
-   * Edges = top-*k* attention links (or probability-weighted).  
+   * Edges = top-$k$ attention links (or probability-weighted).  
 
 2. **Compute** on a held-out corpus:  
-   * *Global efficiency* \(E_g\)  
-   * *Average shortest path* \(L\)  
-   * *Participation coefficient* \(\Pi\) (cross-module talk)  
-   * *Reachability* \(R\) (fraction of nodes reachable within ≤ *d* hops across layers)  
+   * Global efficiency $E_g$  
+   * Average shortest path $L$  
+   * Participation coefficient $\Pi$ (cross-module talk)  
+   * Reachability $R$ (fraction of nodes reachable within ≤ $d$ hops across layers)  
 
-3. **Normalize** each to [0, 1] over the model panel → \(\tilde{E_g},\tilde{\Pi},\tilde{R},\widetilde{(1/L)}\).
+3. **Normalize** each to [0,1] across the model panel:  
+   $\tilde{E_g}, \tilde{\Pi}, \tilde{R}, \widetilde{(1/L)}$  
 
-\[
-I^{\text{topo}} = \tfrac14\!\left(\tilde{E_g} + \tilde{\Pi} + \tilde{R} + \widetilde{\tfrac{1}{L}}\right)
-\]
+$$
+I^{\text{topo}} = \tfrac{1}{4} \left( \tilde{E_g} + \tilde{\Pi} + \tilde{R} + \widetilde{\tfrac{1}{L}} \right)
+$$
 
 ---
 
-#### B.  I<sup>neuro</sup> — cross-substrate brain-likeness  
+#### B. $I^{\text{neuro}}$ — Cross-Substrate Brain-Likeness
 
-| Metric                        | How to measure                                                                                                                               | Normalization                                          |
+| Metric                        | How to Measure                                                                                                                               | Normalization                                          |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| **Neural-predictivity**       | Fit encoding models from LM layer activations to human language-network fMRI/ECoG responses (Schrimpf et al., 2021). Use cross-validated R². | Z-score within panel → \(\tilde{\text{Predictivity}}\) |
-| **Functional specialization** | Quantify face/scene/object selectivity match **and** transfer-asymmetry vs. human ROIs (Dobs et al., 2022).                                  | Z-score → \(\tilde{\text{Specialization}}\)            |
+| **Neural predictivity**       | Fit encoding models from LM activations to human language-network fMRI/ECoG responses (Schrimpf et al., 2021). Use cross-validated $R^2$.     | Z-score across panel → $\tilde{\text{Predictivity}}$   |
+| **Functional specialization** | Match face/scene/object selectivity **and** transfer-asymmetry vs. human ROIs (Dobs et al., 2022).                                            | Z-score → $\tilde{\text{Specialization}}$              |
 
-\[
-I^{\text{neuro}} = \tfrac12\!\left(\tilde{\text{Predictivity}} + \tilde{\text{Specialization}}\right)
-\]
+$$
+I^{\text{neuro}} = \tfrac{1}{2} \left( \tilde{\text{Predictivity}} + \tilde{\text{Specialization}} \right)
+$$
 
----
 
-#### C.  Final Integration score  
+#### C. Final Integration Score  
 
-\[
-\boxed{\,I = \sqrt{I^{\text{topo}} \times I^{\text{neuro}}}\,}
-\]
+$$
+I = \sqrt{ I^{\text{topo}} \times I^{\text{neuro}} }
+$$
 
 *A model earns a high **I** only if it both broadcasts information efficiently **and** mirrors human cortical organization/dynamics.*
 
+---
 
 ### 3) Adaptive Dynamics (A)  ∈ \[0,1]
 
